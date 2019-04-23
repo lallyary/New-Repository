@@ -603,10 +603,7 @@ https://www.01net.it/sette-consigli-git-github/
    :height: 1in
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    
-
-**********
-Repository
-**********
+   
 Creare un Repository su GitHub
 ==============================
 Per creare un Repository su GitHub è necessario registrarsi su GitHub (o accedervi),
