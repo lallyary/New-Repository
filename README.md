@@ -607,7 +607,7 @@ https://www.01net.it/sette-consigli-git-github/
 Creare un Repository su GitHub
 ==============================
 Per creare un Repository su GitHub è necessario registrarsi su GitHub (o accedervi),
-cliccare il tasto verde in altro a sinistra con scritto **"New""**.
+cliccare il tasto verde in altro a sinistra con scritto **"New"**.
 Nella pagina che segue assegnate un **nome** al repository, una **descrizione** (se volete)
 e scegliete il **livello di visibilità**. Infine cliccate su **"Create repository""**.
 
