@@ -601,12 +601,22 @@ https://www.01net.it/sette-consigli-git-github/
 .. |image13| image:: ./media/image14.png
    :width: 2.93841in
    :height: 1in
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   
 
-
+**********
+Repository
+**********
 Creare un Repository su GitHub
 ==============================
-Per creare un Repository su GitHub è necessario registrarsi su GitHub (o accedervi), cliccare sul **+** in altro a destra nella barra nera e cliccare su **"New repository"**. Nella pagina che segue assegnate un **nome** al repository, una **descrizione** (se volete) e selezionate **Public**. Infine cliccate su **"Create repository""**.
+Per creare un Repository su GitHub è necessario registrarsi su GitHub (o accedervi),
+cliccare sul **+** in altro a destra nella barra nera e cliccare su **"New repository"**. 
+Nella pagina che segue assegnate un **nome** al repository, una **descrizione** (se volete)
+e selezionate **Public**. Infine cliccate su **"Create repository""**.
 
 Creare un Repository su GitLab Aziandale
 ========================================
-Per creare un Repository su GitLab è necessario registrarsi su GitLab (o accedervi) e cliccare il tasto verde con scritto **"New Project"**. Nella pagina che segue assegnate un **nome**, una **descrizione** (se volete) e selezionate **Private**. Infine cliccate su **"Create project""**.
+Per creare un Repository su GitLab è necessario registrarsi su GitLab (o accedervi) e
+cliccare il tasto verde con scritto **"New Project"**. Nella pagina che segue assegnate
+un **nome**, una **descrizione** (se volete) e selezionate **Private**. Infine cliccate
+su **"Create project""**.
