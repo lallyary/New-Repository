@@ -225,6 +225,22 @@ Questo comando, eseguito in ambiente locale, creerà una directory
 dati di progetto ed un file **.git** attraverso il quale si effettuerà
 il controllo dell’ultima versione scaricata.
 
+
+Creare un Repository su GitHub
+------------------------------
+Per creare un Repository su GitHub è necessario registrarsi su GitHub (o accedervi),
+cliccare il tasto verde in altro a sinistra con scritto **"New"**.
+Nella pagina che segue assegnate un **nome** al repository, una **descrizione** (se volete)
+e scegliete il **livello di visibilità**. Infine cliccate su **"Create repository""**.
+
+Creare un Repository su GitLab Aziandale
+----------------------------------------
+Per creare un Repository su GitLab è necessario registrarsi su GitLab (o accedervi) e
+cliccare il tasto verde con scritto **"New Project"**. 
+Nella pagina che segue assegnate un **nome**, una **descrizione** (se volete) e 
+scegliete il **livello di visibilità**. Infine cliccate su **"Create project""**.
+
+
 **Clone in una directory diversa**
 ----------------------------------
 
