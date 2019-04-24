@@ -254,7 +254,6 @@ aziendale si dovrà eseguire il comando:
 git@git.intranet.sardegnait.it:user/progetto.git**
 
 **Add**
-~~~~~~~
 
 Il tracciamento dei file avviene attraverso il comando **git add**.
 
@@ -264,7 +263,6 @@ monitorare (nel caso git add sia seguito da un \* verranno aggiunti
 tutti i file).
 
 **Commit**
-~~~~~~~~~~
 
 Il comando **git commit** consente di completare il monitoraggio dei
 file nel repository locale.
@@ -276,7 +274,6 @@ L’opzione –m ‘….’ Consente di inserire un testo descrittivo delle
 modifiche eseguite.
 
 **Push**
-~~~~~~~~
 
 Attraverso il comando git push quanto monitorato in locale può essere
 riportato sul repository aziendale.
@@ -284,6 +281,7 @@ riportato sul repository aziendale.
 In sintesi, nel caso di progetto locale preesistente (punto 3.3.2), si
 riportano i comandi da eseguire per l’aggiornamento del repository
 aziendale:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *git init*
 
@@ -295,6 +293,7 @@ git@git.intranet.sardegnait.it:scasu/ILA-SUP-02.git*
 *git commit –m ‘descrizione operazione’*
 
 *git push -u origin master*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Controllo dello stato dei file**
 ----------------------------------
@@ -308,17 +307,20 @@ versionati.
 -  Nel caso in cui nessuno dei file tracciati abbia subito modifiche
    l’esecuzione del comando git status restituirebbe una situazione del
    tipo:
-
+   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git status*
 
 *# On branch master*
 
 *nothing to commit, working directory clean*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Nel caso in cui, invece, al progetto in locale sia stato aggiunto un
    nuovo file (es. analisi.txt) il comando git status restituirebbe una
    situazione del tipo:
-
+   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git status*
 
 *On branch master*
@@ -331,6 +333,7 @@ versionati.
 
 *nothing added to commit but untracked files present (use "git add" to
 track)*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In questa situazione è emersa la presenza di un nuovo file non ancora
 tracciato e la necessità di eseguire il comando git add nel caso lo si
@@ -340,7 +343,8 @@ voglia ricomprendere tra i file da sottoporre a versionamento.
    tracciato viene modificato (es. il file documentazione.txt).
    L’esecuzione del comando git status successivamente alla modifica del
    file restituirebbe una situazione del tipo:
-
+   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git status*
 
 *On branch master*
@@ -359,6 +363,7 @@ voglia ricomprendere tra i file da sottoporre a versionamento.
 directory)*
 
 *modified: documentazione.txt*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La situazione rappresentata espone sia il nuovo file aggiunto (vedi
 esempio precedente) sia il file documentazione.txt sottoposto a
@@ -404,6 +409,7 @@ file o il codice ricompreso nel branch master.
   diramazione e git checkout per il posizionamento sulla stessa.
 | Ad esempio:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git branch area_svi (creazione diramazione)*
 
 *$ git checkout area_svi (posizionamento nel ramo creato)*
@@ -412,6 +418,7 @@ file o il codice ricompreso nel branch master.
 
 *$ git commit -a -m 'nuovo doc' (add e commit relativo al nuovo file
 creato nel nuova branch area_svi)*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 | Il file creato, attraverso il commit, viene “attribuito” al branch e
   non risulta facente parte dei file attribuiti al master o radice
@@ -420,10 +427,12 @@ creato nel nuova branch area_svi)*
   attribuire al master.
 | Nel caso, infine, si voglia ricomprendere quanto realizzato nel branch
   all’interno del master:
-
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git checkout master*
 
 *$ git merge* *area_svi*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Controllo dello stato dei Branch
 --------------------------------
@@ -431,6 +440,7 @@ Controllo dello stato dei Branch
 Si fa presente che il generico comando **git branch** consente di
 ottenere la lista dei rami correnti, es:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git branch*
 
 *area_svi*
@@ -438,6 +448,7 @@ ottenere la lista dei rami correnti, es:
 *\* master*
 
 *area_svi_2*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 L’asterisco indica in quale branch siamo posizionati.
 
@@ -445,18 +456,22 @@ Un ulteriore controllo può riguardare la verifica di quali branch siano
 stati fusi nel ramo master principale. Attraverso il comando **git
 branch –merged**, es:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git branch --merged*
 
 *area_svi*
 
 *\* master*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Al contrario il comando **git branch –no-merged** permette di
 visualizzare i branch non ancora fusi nel master principale, es:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git branch –no-merged*
 
 *area_svi_2*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Rimuovere un file
 -----------------
@@ -465,6 +480,7 @@ Nel caso in cui si intenda escludere uno specifico file da un successivo
 commit (rimozione dall’area di stage) il comando da utilizzare
 corrisponde a **git reset HEAD <file>**.
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git status*
 
 *On branch master*
@@ -476,10 +492,12 @@ corrisponde a **git reset HEAD <file>**.
 *modified: analisi.txt*
 
 *modified: documentazione.txt*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Nell’esempio si mostra la rimozione del file analisi.txt dalla lista dei
 file da committare:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$*\ **git reset HEAD analisi.txt**
 
 *Unstaged changes after reset:*
@@ -504,6 +522,7 @@ file da committare:
 directory)*
 
 *modified: analisi.txt*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Annullare una modifica
 ----------------------
@@ -518,6 +537,7 @@ Annullare una modifica
 
 Nello specifo l’esecuzione del comando porterebbe a\ *:*
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git checkout – analisi.txt*
 
 *$ git status*
@@ -529,6 +549,7 @@ Nello specifo l’esecuzione del comando porterebbe a\ *:*
 *(use "git reset HEAD <file>..." to unstage)*
 
 *modified: documentazione.txt*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Fork: lavorare con diversi utenti tramite 
 ------------------------------------------
@@ -601,7 +622,7 @@ https://www.01net.it/sette-consigli-git-github/
 .. |image13| image:: ./media/image14.png
    :width: 2.93841in
    :height: 1in
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   
    
    
 Creare un Repository su GitHub
