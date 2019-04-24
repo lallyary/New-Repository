@@ -281,8 +281,8 @@ riportato sul repository aziendale.
 In sintesi, nel caso di progetto locale preesistente (punto 3.3.2), si
 riportano i comandi da eseguire per l’aggiornamento del repository
 aziendale:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *git init*
 
 *git remote add origin
