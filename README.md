@@ -1,111 +1,76 @@
 Modalità operative
 ==================
 
-Installazione Git
+1. Installazione Git
 -----------------
 
 All’indirizzo https://git-scm.com/ scaricare l’ultima versione
 disponibile di Git per Windows.
 
-.. image :: 00.png
-
-|image0|
+<img src="00.png" width="800">
 
 Seguire la procedura di installazione (wizard) fino al suo
 completamento.
 
-+-------------------+
-| **Step 01 di 11** |
-+===================+
-| |image1|          |
-+-------------------+
-|                   |
-+-------------------+
 
-+-------------------+
-| **Step 02 di 11** |
-+===================+
-| |image2|          |
-+-------------------+
-|                   |
-+-------------------+
+**Step 01 di 11**
 
-+-------------------+
-| **Step 03 di 11** |
-+===================+
-| |image3|          |
-+-------------------+
-|                   |
-+-------------------+
+<img src="01.png" width="500">
 
-+-------------------+
-| **Step 04 di 11** |
-+===================+
-| |image4|          |
-+-------------------+
-|                   |
-+-------------------+
 
-+-------------------+
-| **Step 05 di 11** |
-+===================+
-| |image5|          |
-+-------------------+
-|                   |
-+-------------------+
+**Step 02 di 11**
 
-+-------------------+
-| **Step 06 di 11** |
-+===================+
-| |image6|          |
-+-------------------+
-|                   |
-+-------------------+
+<img src="02.png" width="500">
 
-+-------------------+
-| **Step 07 di 11** |
-+===================+
-| |image7|          |
-+-------------------+
-|                   |
-+-------------------+
 
-+-------------------+
-| **Step 08 di 11** |
-+===================+
-| |image8|          |
-+-------------------+
-|                   |
-+-------------------+
+**Step 03 di 11**
 
-+-------------------+
-| **Step 09 di 11** |
-+===================+
-| |image9|          |
-+-------------------+
-|                   |
-+-------------------+
+<img src="03.png" width="500">
 
-+-------------------+
-| **Step 10 di 11** |
-+===================+
-| |image10|         |
-+-------------------+
-|                   |
-+-------------------+
 
-+-------------------+
-| **Step 11 di 11** |
-+===================+
-| |image11|         |
-+-------------------+
-|                   |
-+-------------------+
+**Step 04 di 11**
+
+<img src="04.png" width="500">
+
+
+**Step 05 di 11**
+
+<img src="05.png" width="500">
+
+
+**Step 06 di 11**
+
+<img src="06.png" width="500">
+
+
+**Step 07 di 11**
+
+<img src="07.png" width="500">
+
+
+**Step 08 di 11**
+
+<img src="08.png" width="500">
+
+
+**Step 09 di 11**
+
+<img src="09.png" width="500">
+
+
+**Step 10 di 11**
+
+<img src="10.png" width="500">
+
+
+**Step 11 di 11**
+
+<img src="11.png" width="500">
 
 Al termine avviare Git CMD.
 
-**Abilitazione e accesso GIT tramite account aziendale**
---------------------------------------------------------
+2. **Abilitazione e accesso GIT tramite account aziendale**
+==============================================================
 
 Git è un sistema di gestione delle versioni che consente a una o più
 persone di contribuire alla creazione e aggiornamento dei diversi file
@@ -125,12 +90,11 @@ di corretta attivazione dell’account aziendale, si può procedere con il
 primo accesso che può avvenire tramite browser o tramite riga di
 comando.
 
-**Accesso tramite browser**
-===========================
+2.1 **Accesso tramite browser**
+-----------------------------------
 
 1. Accedere a https://git.intranet.sardegnait.it/
-
-|image12|
+<img src="13.png" width="600">
 
 2. Nel campo “username or email” inserire la propria email personale
 
@@ -138,7 +102,6 @@ comando.
 
 4. Completata la fase di login, modificare la password avendo cura di
    segnare quella nuova in un posto sicuro e riservato
-
 NB. Se durante gli accessi successivi si dovesse smarrire o dimenticare
 la password è possibile seguire il percorso “Forgot your password?” per
 recuperarla. Verrà inviato un link all’indirizzo email aziendale
@@ -155,8 +118,8 @@ autorizzato e utilizzato come username.
    c. se l’account è autorizzato a progetti già esistenti, sarà
       possibile accedere alla lista progetti oppure crearne nuovi
 
-**Accesso tramite linea di comando**
-====================================
+2.2 **Accesso tramite linea di comando**
+------------------------------------------
 
 Oltre l’accesso tramite browser, Git può essere utilizzato da linea di
 comando per trasferire i file dal repository aziendale al proprio
@@ -175,8 +138,8 @@ salvata sul GIT aziendale, consenta al repository aziendale di
 riconoscere ed accettare files o aggiornamenti di versione eseguiti con
 l’account in uso.
 
-**Git – Stati e sezioni di progetto**
--------------------------------------
+3. **Git – Stati e sezioni di progetto**
+========================================
 
 I file in Git possono essere in tre stati: *committed* (committati),
 *modified* (modificati) e *staged* (in stage).
@@ -192,18 +155,22 @@ I file in Git possono essere in tre stati: *committed* (committati),
 Questo ci porta alle tre sezioni principali di un progetto Git: la
 directory di lavoro, l'area di stage e la directory di Git (repository).
 
-4. .. rubric:: **Sequenza dei comandi git**
+4. **Sequenza dei comandi git**
+================================
       :name: sequenza-dei-comandi-git
 
-   a. .. rubric:: **Clone**
+4.1 **Clone**
+----------------
          :name: clone
 
-| Per poter iniziare ad operare su un progetto esistente sul repository
-  aziendale è necessario effettuare una copia locale tramite il comando
-  **git clone [url]**.
-| L’esecuzione del comando git clone consente di scaricare le versioni
-  di ciascun file associato al progetto.
-| Il comando va eseguito nella Powershell, che va cercata tra le app di Windows.
+Per poter iniziare ad operare su un progetto esistente sul repository
+aziendale è necessario effettuare una copia locale tramite il comando:
+  
+**git clone [url]**
+
+L’esecuzione del comando git clone consente di scaricare le versioni 
+di ciascun file associato al progetto.
+Il comando va eseguito nella Powershell, che va cercata tra le app di Windows.
 
 Il comando
 
@@ -212,7 +179,7 @@ Il comando
 **git**. Corrisponde al proprio user Git. Il proprio utente è riportato
 nella sezione profilo di solito corrisponde a @ncognome
 
-|image13|
+<img src="14.png" width="600">
 
 **use**\ r. Corrisponde allo user del creatore del progetto
 
@@ -228,23 +195,8 @@ dati di progetto ed un file **.git** attraverso il quale si effettuerà
 il controllo dell’ultima versione scaricata.
 
 
-Creare un Repository su GitHub
-------------------------------
-Per creare un Repository su GitHub è necessario registrarsi su GitHub (o accedervi),
-cliccare il tasto verde in altro a sinistra con scritto **"New"**.
-Nella pagina che segue assegnate un **nome** al repository, una **descrizione** (se volete)
-e scegliete il **livello di visibilità**. Infine cliccate su **"Create repository""**.
-
-Creare un Repository su GitLab Aziandale
+4.2 **Clone in una directory diversa**
 ----------------------------------------
-Per creare un Repository su GitLab è necessario registrarsi su GitLab (o accedervi) e
-cliccare il tasto verde con scritto **"New Project"**. 
-Nella pagina che segue assegnate un **nome**, una **descrizione** (se volete) e 
-scegliete il **livello di visibilità**. Infine cliccate su **"Create project""**.
-
-
-**Clone in una directory diversa**
-----------------------------------
 
 Una ulteriore possibilità consiste nel definire un nome diverso alla
 directory di destinazione (locale). Questo è possibile eseguendo il
@@ -255,8 +207,51 @@ comando
 **altro_nome_progetto**. Corrisponde al nome della directory che si
 vuole creare
 
-**Init**
---------
+
+4.3 Creare un Repository su GitHub
+---------------------------------------
+Per creare un Repository su GitHub è necessario registrarsi su GitHub (o accedervi),
+cliccare il tasto verde in altro a sinistra con scritto **"New"**.
+
+---
+
+<img src="15.png" width="800">
+
+---
+
+Nella pagina che segue assegnate un **nome** al repository, una **descrizione** (se volete)
+e scegliete il **livello di visibilità**. Infine cliccate su **"Create repository""**.
+
+---
+
+<img src="16.png" width="800">
+
+---
+
+
+4.4 Creare un Repository su GitLab Aziandale
+-------------------------------------------------
+Per creare un Repository su GitLab è necessario registrarsi su GitLab (o accedervi) e
+cliccare il tasto verde con scritto **"New Project"**. 
+
+---
+
+<img src="17.png" width="800">
+
+---
+
+Nella pagina che segue assegnate un **nome**, una **descrizione** (se volete) e 
+scegliete il **livello di visibilità**. Infine cliccate su **"Create project""**.
+
+---
+
+<img src="18.png" width="800">
+
+---
+
+
+4.5 **Init**
+--------------
 
 Attraverso il comando **git init** si potrà tenere traccia di un
 progetto locale e trasformare la directory che ospita il nostro codice
@@ -271,7 +266,8 @@ aziendale si dovrà eseguire il comando:
 **git remote add origin
 git@git.intranet.sardegnait.it:user/progetto.git**
 
-**Add**
+4.6 **Add**
+----------
 
 Il tracciamento dei file avviene attraverso il comando **git add**.
 
@@ -280,7 +276,8 @@ consentirà di aggiungere all’area di stage i file che si intende
 monitorare (nel caso git add sia seguito da un \* verranno aggiunti
 tutti i file).
 
-**Commit**
+4.7 **Commit**
+------------
 
 Il comando **git commit** consente di completare il monitoraggio dei
 file nel repository locale.
@@ -291,7 +288,8 @@ commit –m** **‘descrizione operazione’**.
 L’opzione –m ‘….’ Consente di inserire un testo descrittivo delle
 modifiche eseguite.
 
-**Push**
+4.8 **Push**
+---------
 
 Attraverso il comando git push quanto monitorato in locale può essere
 riportato sul repository aziendale.
@@ -313,8 +311,8 @@ git@git.intranet.sardegnait.it:scasu/ILA-SUP-02.git*
 *git push -u origin master*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Controllo dello stato dei file**
-----------------------------------
+5. **Controllo dello stato dei file**
+========================================
 
 Il controllo dello stato dei file avviene attraverso il comando **git
 status**. Tale comando permette di verificare la situazione dei file nel
@@ -394,8 +392,8 @@ commit* e per esso sarà necessario eseguire il comando *git add
 documentazione.txt* al fine di poter eseguire un successivo *git commit
 –m ‘…….’*.
 
-Visualizzare le differenze
-==========================
+6. Visualizzare le differenze
+===============================
 
 Git status consente di individuare i file che hanno subito delle
 modifiche ma non consente di capire quali cambiamenti siano stati
@@ -410,8 +408,8 @@ ricomprese nello stage.
 **git diff --cached** permette di visualizzare le eventuali modifiche
 ricomprese nello stage.
 
-Branch
-------
+6.1 Branch
+------------
 
 Con il termine branch si fa riferimento a una linea di sviluppo
 collegata ma indipendente dalla linea di sviluppo principale vale a dire
@@ -420,12 +418,12 @@ delle “diramazioni” nelle quali è possibile effettuare modifiche ed
 aggiornamenti di file senza che le stesse modifiche interferiscano con i
 file o il codice ricompreso nel branch master.
 
-| I branch (e quindi i file ad esso collegati) possono poi essere in
-  qualche modo ricondotti al master attraverso una apposita procedura di
-  merging.
-| I comandi principali sono git branch per la creazione della
-  diramazione e git checkout per il posizionamento sulla stessa.
-| Ad esempio:
+I branch (e quindi i file ad esso collegati) possono poi essere in
+qualche modo ricondotti al master attraverso una apposita procedura di
+merging.
+I comandi principali sono git branch per la creazione della
+diramazione e git checkout per il posizionamento sulla stessa.
+Ad esempio:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *$ git branch area_svi (creazione diramazione)*
@@ -438,12 +436,12 @@ file o il codice ricompreso nel branch master.
 creato nel nuova branch area_svi)*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-| Il file creato, attraverso il commit, viene “attribuito” al branch e
-  non risulta facente parte dei file attribuiti al master o radice
-  principale memorizzata nel repository locale. In tal modo è possibile
-  isolare eventuali sviluppi che non si desidera immediatamente
-  attribuire al master.
-| Nel caso, infine, si voglia ricomprendere quanto realizzato nel branch
+Il file creato, attraverso il commit, viene “attribuito” al branch e
+non risulta facente parte dei file attribuiti al master o radice
+principale memorizzata nel repository locale. In tal modo è possibile
+isolare eventuali sviluppi che non si desidera immediatamente
+attribuire al master.
+Nel caso, infine, si voglia ricomprendere quanto realizzato nel branch
   all’interno del master:
   
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -452,8 +450,8 @@ creato nel nuova branch area_svi)*
 *$ git merge* *area_svi*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Controllo dello stato dei Branch
---------------------------------
+6.2 Controllo dello stato dei Branch
+---------------------------------------
 
 Si fa presente che il generico comando **git branch** consente di
 ottenere la lista dei rami correnti, es:
@@ -491,8 +489,8 @@ visualizzare i branch non ancora fusi nel master principale, es:
 *area_svi_2*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rimuovere un file
------------------
+6.3 Rimuovere un file
+-----------------------
 
 Nel caso in cui si intenda escludere uno specifico file da un successivo
 commit (rimozione dall’area di stage) il comando da utilizzare
@@ -542,14 +540,14 @@ directory)*
 *modified: analisi.txt*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Annullare una modifica
-----------------------
+6.4 Annullare una modifica
+----------------------------
 
-| Il precedente esempio ci permette di introdurre una ulteriore funzione
-  di modifica, vale a dire il comando **git checkout -- <file>**.
-| Attraverso il git status (esempio 3.8) è emerso che il file
-  *analisi.txt* risulta modificato e non ricompreso nell’area di stage.
-| Il sistema ci informa, inoltre, che è possibile annullare le modifiche
+Il precedente esempio ci permette di introdurre una ulteriore funzione
+di modifica, vale a dire il comando **git checkout -- <file>**.
+Attraverso il git status (esempio 3.8) è emerso che il file
+*analisi.txt* risulta modificato e non ricompreso nell’area di stage.
+Il sistema ci informa, inoltre, che è possibile annullare le modifiche
   apportate al file analisi.txt attraverso il comando git checkout --
   <file> rimuovendole dunque dalla directory di lavoro
 
@@ -569,19 +567,18 @@ Nello specifo l’esecuzione del comando porterebbe a\ *:*
 *modified: documentazione.txt*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Fork: lavorare con diversi utenti tramite 
-------------------------------------------
+6.5 Fork: lavorare con diversi utenti tramite 
+------------------------------------------------
 
 Per poter effettuare degli interventi sul repository di un altro utente, è consigliabile operare su un “fork”.
---------------------------------------------------------------------------------------------------------------
 
 Il fork è una copia di un progetto, che viene salvata sul proprio
 account, e consente quindi di effettuare su questa copia le modifiche e
 quando tali modifiche sono completate, è possibile inviare al
 proprietario del progetto originale una richiesta di merge.
 
-Documentazione tecnica
-======================
+7. Documentazione tecnica
+===========================
 
 Git è lo strumento previsto dall’AgID per la pubblicazione di documenti
 tecnici e amministrativi, come descritto su Docs Italia
@@ -597,46 +594,3 @@ https://www.html.it/guide/git-la-guida/
 https://it.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
 
 https://www.01net.it/sette-consigli-git-github/
-
-.. |image0| image:: ./media/image1.png
-   :width: 6.0087in
-   :height: 6.37133in
-.. |image1| image:: ./media/image2.png
-   :width: 3.59375in
-   :height: 2.79675in
-.. |image2| image:: ./media/image3.png
-   :width: 5.16602in
-   :height: 4.02033in
-.. |image3| image:: ./media/image4.png
-   :width: 5.17781in
-   :height: 4.04223in
-.. |image4| image:: ./media/image5.png
-   :width: 5.21948in
-   :height: 4.03181in
-.. |image5| image:: ./media/image6.png
-   :width: 5.19864in
-   :height: 4.03181in
-.. |image6| image:: ./media/image7.png
-   :width: 5.17781in
-   :height: 4.03181in
-.. |image7| image:: ./media/image8.png
-   :width: 5.21948in
-   :height: 4.02139in
-.. |image8| image:: ./media/image9.png
-   :width: 5.16739in
-   :height: 4.03181in
-.. |image9| image:: ./media/image10.png
-   :width: 5.19864in
-   :height: 4.03181in
-.. |image10| image:: ./media/image11.png
-   :width: 5.16739in
-   :height: 4.02139in
-.. |image11| image:: ./media/image12.png
-   :width: 5.15561in
-   :height: 4.06199in
-.. |image12| image:: ./media/image13.png
-   :width: 4.7375in
-   :height: 1.80151in
-.. |image13| image:: ./media/image14.png
-   :width: 2.93841in
-   :height: 1in
